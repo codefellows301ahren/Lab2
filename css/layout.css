@@ -1,0 +1,22 @@
+.picSection{
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin-left: 6%;
+    margin-bottom: 10%
+}
+
+
+
+section img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+section p {
+    overflow: auto;
+}
+
+footer{
+    position: relative;
+}
