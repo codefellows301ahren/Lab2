@@ -57,11 +57,19 @@ HornyBeasts.readJson = () => {
     })
     //render to the dom
     .then(HornyBeasts.loadHornyBeasts);
-  
 };
 
 HornyBeasts.loadHornyBeasts = () => {
   HornyBeasts.allHornyBeasts.forEach(hornyBeast => hornyBeast.render());
 };
 
+
+
+
 $(() => HornyBeasts.readJson());
+
+$('select').on('change', function(){
+  let $selection = $(this).val();
+  $('div').hide();
+  $(`div[class="${$selection}"]`).show();
+});
