@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Special+Elite&display=swap');
 
 *{
     margin: auto;
@@ -13,4 +13,13 @@ main{
     padding-right: 10%;
     padding-top: 5%;
     float: left;
+}
+
+footer{
+    text-align: center;
+    margin: 3%;
+}
+
+h2{
+    font-family: 'Gloria Hallelujah', cursive;
 }

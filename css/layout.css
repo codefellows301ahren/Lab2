@@ -12,7 +12,10 @@ header h1{
     margin-bottom: 250px;
     left: 30%;
     text-align: center;
-    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.picSection p{
+    font-family: 'Special Elite', cursive;
 }
 
 
@@ -27,6 +30,3 @@ section p {
     overflow: auto;
 }
 
-footer{
-    position: relative;
-}
