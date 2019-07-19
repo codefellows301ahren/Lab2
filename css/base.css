@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+
+*{
+    margin: auto;
+    
+}
+header{
+    text-align: center;
+}
+
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    float: left;
+}
