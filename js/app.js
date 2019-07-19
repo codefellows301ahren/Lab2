@@ -34,7 +34,8 @@ HornyBeasts.prototype.render = function() {
   hornyBeastClone.find('img').attr('src', this.image_url).attr('alt', 'alt text');
   hornyBeastClone.find('p').text(this.description);
   hornyBeastClone.removeClass('clone');
-  hornyBeastClone.addClass(this.keyword).addClass('picSection');
+  hornyBeastClone.addClass('picSection');
+  hornyBeastClone.attr('id',this.keyword);
 
   if(HornyBeasts.optionsArry.includes(this.keyword)){
     console.log('im already alive');
@@ -69,6 +70,6 @@ $(() => HornyBeasts.readJson());
 $('select').on('change', function(){
   let $selection = $(this).val();
   $('section').hide();
-  $(`section[class = "${$selection}"]`).show();
-  console.log($(`section[class = "${$selection}"]`))
+  $(`section[id = "${$selection}"]`).show();
+  console.log($(`section[id = "${$selection}"]`))
 });
