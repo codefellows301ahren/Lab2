@@ -23,8 +23,8 @@ HornyBeasts.allHornyBeasts = [];
 HornyBeasts.optionsArry =[];
 
 HornyBeasts.prototype.render = function() {
-  $('main').append('<div class="clone"></div>');
-  let hornyBeastClone = $('div[class="clone"]');
+  $('main').append('<section class="clone"></section>');
+  let hornyBeastClone = $('section[class="clone"]');
 
   let hornyBeastHtml = $('#hornyBeast-template').html();
 
@@ -34,15 +34,13 @@ HornyBeasts.prototype.render = function() {
   hornyBeastClone.find('img').attr('src', this.image_url).attr('alt', 'alt text');
   hornyBeastClone.find('p').text(this.description);
   hornyBeastClone.removeClass('clone');
-  hornyBeastClone.attr('class', this.title);
+  hornyBeastClone.addClass(this.keyword).addClass('picSection');
 
-  HornyBeasts.allHornyBeasts.forEach(element => {
-    if(HornyBeasts.optionsArry.includes(element.keyword)){
-      console.log('im already alive');
-    }else{HornyBeasts.optionsArry.push(element.keyword);
-      $('select').append(`<option value=${element.keyword}>${element.keyword}</option>`)
-    }
-  });
+  if(HornyBeasts.optionsArry.includes(this.keyword)){
+    console.log('im already alive');
+  }else{HornyBeasts.optionsArry.push(this.keyword);
+    $('select').append(`<option value=${this.keyword}>${this.keyword}</option>`)
+  }
 }
 
 
@@ -70,6 +68,7 @@ $(() => HornyBeasts.readJson());
 
 $('select').on('change', function(){
   let $selection = $(this).val();
-  $('div').hide();
-  $(`div[class="${$selection}"]`).show();
+  $('section').hide();
+  $(`section[class = "${$selection}"]`).show();
+  console.log($(`section[class = "${$selection}"]`))
 });

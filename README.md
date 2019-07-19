@@ -19,3 +19,14 @@
 #Finish time: _____
 
 #Actual time needed to complete: __1.75___
+
+
+##Number and name of feature: Feature #3: Style the application
+
+#Estimate of time needed to complete: ___2hr__
+
+#Start time: __1:25___
+
+#Finish time: _____
+
+#Actual time needed to complete: __1.75___
