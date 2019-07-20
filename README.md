@@ -27,6 +27,6 @@
 
 #Start time: __1:25___
 
-#Finish time: _____
+#Finish time: __4:30___
 
-#Actual time needed to complete: __1.75___
+#Actual time needed to complete: __3___
