@@ -1,5 +1,8 @@
 ### Lab2
 
+purpose is to display different fictional and non fictional horned animals and allow the user to filter based on selection in dropdown.
+co programed and authored by James and Ahren
+
 ##Number and name of feature: 1 Display images
 
 #Estimate of time needed to complete: ___1hr__

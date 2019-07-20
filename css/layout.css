@@ -12,10 +12,14 @@ header h1{
     margin-bottom: 250px;
     left: 30%;
     text-align: center;
+    
 }
-
+.picSection h2{
+    display: inline;
+}
 .picSection p{
     font-family: 'Special Elite', cursive;
+    display: inline;
 }
 
 
@@ -30,3 +34,6 @@ section p {
     overflow: auto;
 }
 
+select{
+    width: 150px;
+}
